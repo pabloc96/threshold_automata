@@ -59,7 +59,7 @@ class ThresholdAutomaton():
 
 		if random_grid:
 			self.grid = np.random.choice([-1,1], n**2 , p = [1-proportion, proportion]).reshape(n, n)
-		elif grid.all == None:
+		elif grid == None:
 			self.grid = np.array([[-1]*n]*n)	
 		else:
 			self.grid = np.array(grid)
